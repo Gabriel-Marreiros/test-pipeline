@@ -1,0 +1,31 @@
+pipeline {
+  agent {
+    label "master"
+  }
+
+  stages {
+    stage("Unit Tests") {
+      steps {
+        echo("Realizando testes unitários")
+      }
+    }
+
+    stage("Build Docker Image") {
+      steps {
+        echo("Realizando build da imagem Docker")
+      }
+    }
+    
+    stage("Push Docker Image") {
+      steps {
+        echo("Realizando push da imagem Docker para o Docker Hub")
+      }
+    }
+    
+    stage("Deploy Server") {
+      steps {
+        echo("Realizando o deploy no servidor")
+      }
+    }
+  }
+}
