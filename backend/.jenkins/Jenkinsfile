@@ -4,6 +4,13 @@ pipeline {
   }
 
   stages {
+    
+    stage("Test") {
+      steps {
+        sh("pwd")
+      }
+    }
+    
     stage("Unit Tests") {
       steps {
         echo("Realizando testes unitários")
