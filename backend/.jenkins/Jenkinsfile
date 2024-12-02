@@ -7,31 +7,35 @@ pipeline {
     
     stage("Test") {
       steps {
-        sh("pwd")
+        sh("ls")
       }
     }
     
     stage("Unit Tests") {
       steps {
         echo("Realizando testes unitários")
+        sh("ls")
       }
     }
 
     stage("Build Docker Image") {
       steps {
         echo("Realizando build da imagem Docker")
+        sh("ls")
       }
     }
     
     stage("Push Docker Image") {
       steps {
         echo("Realizando push da imagem Docker para o Docker Hub")
+        sh("ls")
       }
     }
     
     stage("Deploy Server") {
       steps {
         echo("Realizando o deploy no servidor")
+        sh("ls")
       }
     }
   }
