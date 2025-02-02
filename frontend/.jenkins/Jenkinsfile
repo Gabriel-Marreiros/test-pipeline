@@ -8,14 +8,14 @@ pipeline {
       steps {
         echo "Projeto do frontend"
         sh "ls"
-        
-        dir("/backend"){
-          echo "Diretório do Backend"
+      
+        dir("/frontend"){
+          echo "Diretório do Frontend"
           sh "ls"
         }
         
-        dir("/frontend"){
-          echo "Diretório do Frontend"
+        dir("/backend"){
+          echo "Diretório do Backend"
           sh "ls"
         }
       }
