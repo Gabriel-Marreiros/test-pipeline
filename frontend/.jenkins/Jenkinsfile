@@ -9,12 +9,12 @@ pipeline {
         echo "Projeto do frontend"
         sh "ls"
       
-        dir("/frontend"){
+        dir("frontend"){
           echo "Diretório do Frontend"
           sh "ls"
         }
         
-        dir("/backend"){
+        dir("backend"){
           echo "Diretório do Backend"
           sh "ls"
         }
