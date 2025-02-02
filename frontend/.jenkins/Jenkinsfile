@@ -1,0 +1,14 @@
+pipeline {
+  agent {
+    label "master"
+  }
+
+  stages {
+    stage("Test"){
+      steps {
+        sh "Projeto do frontend"
+        sh "ls"
+      }
+    }
+  }
+}
