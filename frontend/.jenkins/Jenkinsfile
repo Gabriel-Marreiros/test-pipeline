@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage("Test"){
       steps {
-        sh "Projeto do frontend"
+        echo "Projeto do frontend"
         sh "ls"
       }
     }
